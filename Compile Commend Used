@@ -1,0 +1,17 @@
+__COMPILE__
+
+riscv64-unknown-elf-gcc -O2 -Wall -march=rv64imac -mabi=lp64 \
+-DUSERNAME="\"$(id -un)\"" -DHOSTNAME="\"$(hostname -s)\"" \
+unique_test.c -o unique_test
+
+__RUN__
+
+spike ~/riscv_toolchain/riscv-pk/build/pk ./unique_test
+
+__EXPECTED OUTPUT FORMAT__
+
+RISC-V Uniqueness Check
+User: <your-username>
+Host: <your-hostname>
+UniqueID: 0x<64-bit-hex>
+GCC_VLEN: <number>
