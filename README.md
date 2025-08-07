@@ -245,7 +245,7 @@ riscv64-unknown-elf-objdump -d ./<program> | sed -n '/<main>:/,/^$/p' > <program
 ## TASK-2.10 — Tool Version Checks
 
 ## TASK-2.10.1 - verifying spike version
-![spike version](gcc_spike_version/spike_version .png)
+![spike version](https://github.com/yash4959/vsdRiscvSoc/blob/riscv-task2-yash/gcc_spike_version/spike_version%20.png?raw=true)
 
 ## TASK-2.10.2 - verifying gcc version
 ![gcc version](gcc_spike_version/gcc_version.png)
