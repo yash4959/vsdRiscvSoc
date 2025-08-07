@@ -245,7 +245,7 @@ riscv64-unknown-elf-objdump -d ./<program> | sed -n '/<main>:/,/^$/p' > <program
 ## TASK-2.10 — Tool Version Checks
 
 ## TASK-2.10.1 - verifying spike version
-![spike version](gcc_spike_version/spike_version.png)
+![spike version](gcc_spike_version/spike_version .png)
 
 ## TASK-2.10.2 - verifying gcc version
 ![gcc version](gcc_spike_version/gcc_version.png)
