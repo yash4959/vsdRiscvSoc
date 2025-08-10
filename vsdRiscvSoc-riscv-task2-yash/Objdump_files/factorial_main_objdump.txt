@@ -1,0 +1,27 @@
+000000000001036e <main>:
+   1036e:	1101                	addi	sp,sp,-32
+   10370:	ec06                	sd	ra,24(sp)
+   10372:	e822                	sd	s0,16(sp)
+   10374:	1000                	addi	s0,sp,32
+   10376:	67f1                	lui	a5,0x1c
+   10378:	77078513          	addi	a0,a5,1904 # 1c770 <__clzdi2+0x1a8>
+   1037c:	e53ff0ef          	jal	ra,101ce <uniq_print_header>
+   10380:	47b1                	li	a5,12
+   10382:	fef42623          	sw	a5,-20(s0)
+   10386:	fec42783          	lw	a5,-20(s0)
+   1038a:	853e                	mv	a0,a5
+   1038c:	f9dff0ef          	jal	ra,10328 <fact>
+   10390:	872a                	mv	a4,a0
+   10392:	fec42783          	lw	a5,-20(s0)
+   10396:	863a                	mv	a2,a4
+   10398:	85be                	mv	a1,a5
+   1039a:	67f1                	lui	a5,0x1c
+   1039c:	78078513          	addi	a0,a5,1920 # 1c780 <__clzdi2+0x1b8>
+   103a0:	1ac000ef          	jal	ra,1054c <printf>
+   103a4:	4781                	li	a5,0
+   103a6:	853e                	mv	a0,a5
+   103a8:	60e2                	ld	ra,24(sp)
+   103aa:	6442                	ld	s0,16(sp)
+   103ac:	6105                	addi	sp,sp,32
+   103ae:	8082                	ret
+
